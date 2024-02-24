@@ -14,7 +14,6 @@
             padding-top: 100px;
         }
     </style>
-    <script src="q2.js"></script>
     <link rel="stylesheet" href="q2.css">
 </head>
 <body>
@@ -25,26 +24,15 @@
     </div>
     <div class="form-container">
         <form id="passwordForm">
-          <input type="password" id="password" placeholder="KEY?" class="password-input" required="">
-          <button type="submit" class="submit-btn">Submit</button>
-          <button><a href="index.html">Previous</a></button>
+            <input type="password" id="password" placeholder="KEY?" class="password-input" required="">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button><a href="index.html">Previous</a></button>
         </form>
         <div id="message" class="message"></div>
-      </div>
     </div>
+</div>
 
-    <script>
-        document.getElementById('passwordForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var password = document.getElementById('password').value;
-    var message = document.getElementById('message');
 
-    if (password === 'CYBERWOLF') {
-    message.innerHTML = '<p class="success">Congratulations! You entered the correct password.</p><a href="question3.html">Next</a>';
-    } else {
-    message.innerHTML = '<p class="error">Oops! You didn\'t catch me.</p>';
-    }
-});
-    </script>
+<script src="q2.js"></script>
 </body>
 </html>
