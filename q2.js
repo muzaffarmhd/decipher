@@ -22,8 +22,8 @@ document.getElementById('passwordForm').addEventListener('submit', function(even
     var password = document.getElementById('password').value;
     var message = document.getElementById('message');
 
-    if (password === 'CYBERWOLF') {
-    message.innerHTML = '<p class="success">Congratulations! You entered the correct password.</p><a href="question3.html">Next</a>';
+    if (password === 'CYBERWOLF' || password === 'cyberwolf' || password === 'Cyberwolf') {
+    message.innerHTML = '<p class="success">Congratulations! You entered the correct password.</p><a href="quest3.html">Next</a>';
     } else {
     message.innerHTML = '<p class="error">Oops! You didn\'t catch me.</p>';
     }
